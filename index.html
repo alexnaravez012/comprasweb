@@ -155,7 +155,7 @@
         </div>
     </div>
     <!-- Busqueda por lista -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- Contenido  -->
         <div class="main-container-purchases">
             <!-- Subnavbar de busqueda -->
@@ -174,7 +174,325 @@
                     </div>
                 </div>
                 <div>
-                    <button class="button-search-purchases uk-text-bold">Crear producto</button>
+                    <button class="button-search-purchases uk-text-bold" uk-toggle="target: #modal-create-product">Crear producto</button>
+                    <div id="modal-create-product" uk-modal>
+                        <div class="uk-modal-dialog modal-create-product-purchases">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-flex">
+                                <div>
+                                    <div style="margin-bottom: 10px;">
+                                        <h4 class="uk-margin-remove uk-text-bold">Crear producto</h4>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                                        <div>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="Nombre de producto">
+                                        </div>
+                                        <div class="padding-horizontal-20">
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="Código de barras">
+                                        </div>
+                                        <div class="select-create-product-purchases">
+                                            <select>
+                                            <option>Seleccione IVA</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                            <div class="select_arrow-create-product-purchases">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Cantidad</h6>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="0">
+                                        </div>
+                                        <div class="padding-horizontal-20">
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Precio antes de IVA</h6>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="$0.00">
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Costo antes de IVA</h6>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="$0.00">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle padding-vertical-10">
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Seleccione unidad de medida</h6>
+                                            <div class="select-create-product-purchases">
+                                                <select>
+                                                <option>Sin unidad de medida</option>
+                                                <option>opción 1</option>
+                                                <option>opción 2</option>
+                                                <option>opción 3</option>
+                                                <option>opción 4</option>
+                                            </select>
+                                                <div class="select_arrow-create-product-purchases">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="padding-horizontal-20">
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Precio tras IVA</h6>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="0">
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-11 color-grey">Costo tras IVA</h6>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="0">
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle padding-vertical-20">
+                                        <div>
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="Documento Proveedor">
+                                        </div>
+                                        <h4 class="uk-margin-remove padding-horizontal-5">-</h4>
+                                        <div>
+                                            <button class="button-search-provider-modal-create-product-purchases" uk-toggle="target: #modal-list-provider">Buscar Proveedor</button>
+                                            <div id="modal-list-provider" uk-modal>
+                                                <div class="uk-modal-dialog modal-list-provider-purchases">
+                                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                    <div class="padding-vertical-15 padding-horizontal-30">
+                                                        <h4 class="uk-margin-remove uk-text-bold color-blue">Seleccionar Proveedor</h4>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle padding-vertical-10" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-12 uk-text-bold">Nombre de producto</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-12 uk-text-bold">Documento</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-12 uk-text-bold">Dirección</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-12 uk-text-bold">Teléfono</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400"></h6>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-tab"></div>
+                                                    <div class="uk-flex uk-flex-middle" style="padding-left: 50px;">
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">Santa Helena</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">NIT - 112345684</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">CR 31 44 46</h6>
+                                                        <h6 class="uk-margin-remove uk-text-center width-400 font-size-11">3182246611</h6>
+                                                        <div class="width-400">
+                                                            <button class="button-edit-provider-purchases">Editar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 55px;">
+                                            <input class="inputs-modal-create-products-purchases" type="text" placeholder="Código de proveedor">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-left: 70px; margin-top: 40px;">
+                                    <div>
+                                        <h6 class="uk-margin-remove font-size-11 color-grey">Seleccione Línea</h6>
+                                        <div class="select-create-product-purchases">
+                                            <select>
+                                            <option>Sin linea</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                            <div class="select_arrow-create-product-purchases">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="uk-margin-remove font-size-11 color-grey">Seleccione Marca</h6>
+                                        <div class="select-create-product-purchases">
+                                            <select>
+                                            <option>Sin marca</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                            <div class="select_arrow-create-product-purchases">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Proveedor Seleccionado</h6>
+                                        <h5 class="uk-margin-remove uk-text-bold">Luz Esperanza Lopez</h5>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle">
+                                        <img class="image-box-image-create-product-purchases" src="./data/Cuadrado-de-imagen.png" alt="">
+                                        <div class="button-upload-image-purchases uk-flex uk-flex-center">
+                                            <div>
+                                                <img class="icon-upload-image-purchases" src="./data/simbolo-cargar-imagen.png" alt="">
+                                                <h6 class="uk-margin-remove uk-text-bold font-size-11" style="color: white;">Cargar imagen</h6>
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-column" style="margin-top: 25px; margin-left: 40px;">
+                                            <button class="buttons-create-products-purchases uk-text-bold">Crear</button>
+                                            <button class="buttons-create-products-purchases uk-text-bold" style="margin-top: 20px; color: red;">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button class="button-search-purchases uk-text-bold">Busqueda por categorías</button>
@@ -415,14 +733,14 @@
         </div>
     </div>
     <!-- Busqueda por categorías -->
-    <div style="display: none; ">
+    <div style="display: inline">
         <div class="main-container-purchases ">
             <!-- Subnavbar de busqueda -->
-            <div class="uk-flex uk-flex-middle uk-flex-between subnavbar-search-products-purchases ">
+            <div class="uk-flex uk-flex-middle subnavbar-search-products-purchases ">
                 <div style=" margin-left: 50px; ">
-                    <h3 class="uk-margin-remove uk-text-bold color-blue ">Ventas</h3>
+                    <h3 class="uk-margin-remove uk-text-bold color-blue ">Compras</h3>
                 </div>
-                <div class="uk-flex uk-flex-middle ">
+                <div class="uk-flex uk-flex-middle" style="margin-left: 80px;">
                     <div style="margin-right: 10px; ">
                         <i class="fas fa-search color-blue " style="font-size: 15px; padding-right: 10px ; "></i>
                     </div>
@@ -432,10 +750,10 @@
                         </form>
                     </div>
                     <div>
-                        <button class="button-search-purchases uk-text-bold " style="margin-left: 15px; ">Busqueda por lista</button>
+                        <button class="button-search-purchases uk-text-bold " style="margin-left: 80px;">Busqueda por lista</button>
                     </div>
                     <div>
-                        <a class="padding-horizontal-10 " style="position: relative; margin-left: 135px; " href=" ">
+                        <a class="padding-horizontal-10" style="position: relative; margin-left: 240px;" href=" ">
                             <img class="img-size-bag-purchases " src="./data/Carrito-de-compras.png " alt=" " uk-img>
                             <h6 class="text-img-bag-navbar-purchases uk-text-bold font-size-12 " style="position: absolute; ">0</h6>
                         </a>
@@ -446,7 +764,7 @@
             <div class="menu-vertical-categories-purchases ">
                 <ul class="uk-list ">
                     <div class="uk-inline ">
-                        <button class="button-categories-menu-vertical-purchases ">
+                        <button class="button-categories-menu-vertical-purchases">
                             <div class="img-categories-menu-vertical-purchases uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-08.png); " uk-img></div>
                             <h6 class="uk-margin-remove color-blue uk-text-bold " style="font-size: 11px; ">Comida</h6>
                         </button>
@@ -532,7 +850,7 @@
             <!-- Contenido -->
             <div class="uk-flex ">
                 <div class="main-container-products-selection-purchases uk-flex uk-flex-wrap " style="position: relative; ">
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -548,13 +866,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives3 ">
-                                <img class="like-size-card-purchases like-actives3 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives3 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -570,10 +884,6 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives4 ">
-                                <img class="like-size-card-purchases like-actives4 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives4 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
@@ -592,13 +902,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives5 ">
-                                <img class="like-size-card-purchases like-actives5 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives5 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -614,13 +920,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives6 ">
-                                <img class="like-size-card-purchases like-actives6 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives6 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -636,10 +938,6 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives7 ">
-                                <img class="like-size-card-purchases like-actives7 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives7 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
@@ -658,13 +956,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives8 ">
-                                <img class="like-size-card-purchases like-actives8 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives8 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -680,13 +974,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives9 ">
-                                <img class="like-size-card-purchases like-actives9 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives9 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -702,10 +992,6 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives10 ">
-                                <img class="like-size-card-purchases like-actives10 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives10 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
@@ -724,13 +1010,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives11 ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -746,13 +1028,9 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives11 ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 80px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
                         <div class="uk-width-1-2 " style="padding-top: 8px; ">
                             <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
@@ -768,10 +1046,6 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives11 ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
@@ -790,10 +1064,6 @@
                                 </div>
                             </div>
                             <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                            <div uk-toggle="target: .like-actives11 ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-desactivado.png " style="position: absolute; " alt=" ">
-                                <img class="like-size-card-purchases like-actives11 " src="./data/Like-activado.png " style="position: absolute; " alt=" " hidden>
-                            </div>
                         </div>
                     </div>
                 </div>
