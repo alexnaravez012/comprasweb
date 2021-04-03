@@ -1311,3 +1311,9 @@
     border-bottom-right-radius: 8px;
     cursor: pointer;
 }
+
+.input-card-search-categories-purchases {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 80px;
+}
