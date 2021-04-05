@@ -850,14 +850,14 @@
             <!-- Contenido -->
             <div class="uk-flex ">
                 <div class="main-container-products-selection-purchases uk-flex uk-flex-wrap " style="position: relative; ">
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 60px; ">
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
                         <div class="uk-flex">
-                            <div class="uk-width-1-2 " style="padding-top: 8px; ">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
                                 <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
                                 <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
                             </div>
                             <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                            <div class="uk-width-1-2 uk-text-center ">
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
                                 <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
                                 <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
                                 <div style="margin-top: 15px; ">
@@ -873,246 +873,642 @@
                                     <div style="margin-top: 15px;">
                                         <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
                                         <div class="uk-flex uk-flex-middle">
-                                            <input class="input-card-search-categories-purchases" type="text">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
                                             <i class="fas fa-save font-size-13 cursor-pointer color-blue padding-horizontal-5"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
                             </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                            <div style="margin-top: 15px; ">
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-13 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-13 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
                         </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
+                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases" style="position: relative; margin-right: 40px; ">
+                        <div class="uk-flex">
+                            <div class="uk-width-1-2 " style="padding-top: 8px; padding-left: 10px;">
+                                <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
+                                <h5 class="uk-margin-remove font-size-13 uk-text-bold uk-text-muted" style="padding-top: 10px; padding-left: 13px; ">15.000$</h5>
+                            </div>
+                            <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
+                            <div class="uk-width-1-2 uk-text-center" style="margin-right: 8px;">
+                                <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
+                                <h6 class="uk-margin-remove font-size-11">7703133086479</h6>
+                                <div style="margin-top: 15px; ">
+                                    <div class="uk-flex uk-flex-middle uk-flex-center cursor-pointer">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">IVA:</h6>
+                                        <h6 class="uk-margin-remove font-size-9 padding-horizontal-5">0%</h6>
+                                        <i class="fas fa-caret-down font-size-12"></i>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-top: 5px;">
+                                        <h6 class="uk-margin-remove font-size-9 uk-text-bold">Margen::</h6>
+                                        <h6 class="uk-margin-remove font-size-9">0.00%</h6>
+                                    </div>
+                                    <div style="margin-top: 15px;">
+                                        <h6 class="uk-margin-remove font-size-11">Código proveedor</h6>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="--">
+                                            <i class="fas fa-save font-size-12 cursor-pointer color-blue padding-horizontal-5"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
                         </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 18px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Descuento</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="0%">
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                        </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 uk-text-center">Valor Compra</h6>
+                                <input class="input-card-search-categories-purchases uk-text-center" type="text" placeholder="$0.0">
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
                         </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                        </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
+                            <div>
+                                <h6 class="uk-margin-remove uk-text-center uk-text-muted font-size-13 font-weight-500">Total con IVA</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-center">$15,000</h5>
                             </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
                         </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
-                            </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                        </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
-                            </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                        </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; margin-right: 60px; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
-                            </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
-                        </div>
-                    </div>
-                    <div class="uk-card uk-card-default uk-card-body card-products-add-purchases uk-flex " style="position: relative; ">
-                        <div class="uk-width-1-2 " style="padding-top: 8px; ">
-                            <div class="img-items-products-add-70-purchases " style="background-image: url(./data/burguer.png); " uk-img></div>
-                            <h5 class="uk-margin-remove font-size-12 uk-text-muted " style="padding-top: 5px; padding-left: 13px; ">15.000$</h5>
-                        </div>
-                        <h6 class="button-discount-card-purchases " style="position: absolute; ">-25%</h6>
-                        <div class="uk-width-1-2 uk-text-center ">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold ">Hamburguesa 1</h6>
-                            <div style="margin-top: 15px; ">
-                                <h6 class="uk-margin-remove font-size-11 ">7703133086479</h6>
-                                <div class="uk-flex uk-flex-middle uk-flex-center ">
-                                    <h6 class="uk-margin-remove font-size-9 ">Impuesto:</h6>
-                                    <h6 class="uk-margin-remove font-size-9 " style="padding-left: 10px; ">0%</h6>
-                                </div>
-                            </div>
-                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer ">Agregar</BUtton>
+                        <div class="uk-flex uk-flex-center">
+                            <button class="button-card-add-product-purchases font-size-10 uk-text-bold cursor-pointer">Agregar</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="main-container-products-selection-second-purchases ">
+                    <div class="main-container-products-selection-second-purchases">
                         <div>
                             <h6 class="uk-margin-remove uk-text-bold font-size-11 ">Productos relacionados</h6>
-                            <div class="related-products-box-purchases padding-horizontal-10 ">
+                            <div class="related-products-box-purchases padding-horizontal-10" style="height: 240px;">
                                 <div class="padding-horizontal-25 padding-vertical-10 ">
-                                    <div class="padding-vertical-5 ">
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 1</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
-                                    </div>
-                                    <div class="uk-flex " style="margin-bottom: 10px; ">
-                                        <div class="uk-flex uk-flex-middle ">
-                                            <div style="margin-right: 30px; ">
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Salsas</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Adicionales</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Verduras</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Papas:</h6>
-                                                    <h6 class="uk-margin-remove uk-text-light font-size-12 " style="padding-left: 5px; ">Si</h6>
-                                                </div>
-                                            </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <div class="padding-vertical-5 ">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 1</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
                                         </div>
                                         <div style="margin-left: 30px; ">
                                             <div class="uk-flex uk-flex-middle uk-flex-center ">
@@ -1123,37 +1519,25 @@
                                             <div>
                                                 <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center ">Quitar</h6>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
+                                        <div>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total con IVA</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="hr-tab "></div>
                                 <div class="padding-horizontal-25 padding-vertical-10 ">
-                                    <div class="padding-vertical-5 ">
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 2</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
-                                    </div>
-                                    <div class="uk-flex " style="margin-bottom: 10px; ">
-                                        <div class="uk-flex uk-flex-middle ">
-                                            <div style="margin-right: 30px; ">
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Salsas</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Adicionales</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Verduras</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Papas:</h6>
-                                                    <h6 class="uk-margin-remove uk-text-light font-size-12 " style="padding-left: 5px; ">Si</h6>
-                                                </div>
-                                            </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <div class="padding-vertical-5 ">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 1</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
                                         </div>
                                         <div style="margin-left: 30px; ">
                                             <div class="uk-flex uk-flex-middle uk-flex-center ">
@@ -1164,37 +1548,25 @@
                                             <div>
                                                 <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center ">Quitar</h6>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
+                                        <div>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total con IVA</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="hr-tab "></div>
                                 <div class="padding-horizontal-25 padding-vertical-10 ">
-                                    <div class="padding-vertical-5 ">
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 3</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
-                                    </div>
-                                    <div class="uk-flex " style="margin-bottom: 10px; ">
-                                        <div class="uk-flex uk-flex-middle ">
-                                            <div style="margin-right: 30px; ">
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Salsas</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Adicionales</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Verduras</h6>
-                                                    <i class="fas fa-caret-down " style="margin-left: 5px; "></i>
-                                                </div>
-                                                <div class="uk-flex uk-flex-middle ">
-                                                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Papas:</h6>
-                                                    <h6 class="uk-margin-remove uk-text-light font-size-12 " style="padding-left: 5px; ">Si</h6>
-                                                </div>
-                                            </div>
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <div class="padding-vertical-5 ">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-14 color-blue ">Hamburguesa 1</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-13 ">15.000$</h6>
                                         </div>
                                         <div style="margin-left: 30px; ">
                                             <div class="uk-flex uk-flex-middle uk-flex-center ">
@@ -1205,47 +1577,88 @@
                                             <div>
                                                 <h6 class="uk-margin-remove font-size-11 uk-text-muted uk-text-center ">Quitar</h6>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-middle" style="margin-bottom: 10px;">
+                                        <div>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
+                                        </div>
+                                        <div style="margin-left: 20px;">
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-11">Total con IVA</h6>
+                                            <h6 class="uk-margin-remove font-size-11">$15,000</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-flex uk-flex-middle padding-vertical-3 " style="padding-left: 42px; ">
+                        <div class="uk-flex uk-flex-middle padding-vertical-3 " style="padding-left: 35px;">
                             <h6 class="uk-margin-remove font-size-9 uk-text-muted ">Numero de items:</h6>
                             <h6 class="uk-margin-remove font-size-9 uk-text-muted ">3</h6>
                         </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-around padding-vertical-10 " style="margin-top: 15px; ">
+                        <div class="uk-flex uk-flex-middle uk-flex-around" style="margin-top: 15px;">
                             <div>
-                                <h3 class="uk-margin-remove uk-text-bold ">Total</h3>
-                                <div class="uk-flex uk-flex-middle ">
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Subtotal</h6>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 padding-horizontal-5 ">$55,000</h6>
+                                <div class="uk-flex uk-flex-middle">
+                                    <div style="margin-left: 20px;">
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Seleccione la tienda:</h6>
+                                            <div class="select-search-categories-purchases">
+                                                <select>
+                                                    <option>PANADERIA MANÁ</option>
+                                                    <option>opción 1</option>
+                                                    <option>opción 2</option>
+                                                    <option>opción 3</option>
+                                                    <option>opción 4</option>
+                                                </select>
+                                                <div class="select_arrow-search-categories-purchases">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Seleccione pedido:</h6>
+                                            <div class="select-search-categories-purchases">
+                                                <select>
+                                                    <option>Sin pedido</option>
+                                                    <option>opción 1</option>
+                                                    <option>opción 2</option>
+                                                    <option>opción 3</option>
+                                                    <option>opción 4</option>
+                                                </select>
+                                                <div class="select_arrow-search-categories-purchases">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 3px; margin-left: 25px;">
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Fecha de compra:</h6>
+                                            <input type="date" class="input-date-purchases font-size-11" style="width: 130px;">
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove font-size-10 uk-text-bold">Número de factura</h6>
+                                            <div class="select-search-categories-purchases">
+                                                <select>
+                                                    <option>$3,000.00</option>
+                                                    <option>opción 1</option>
+                                                    <option>opción 2</option>
+                                                    <option>opción 3</option>
+                                                    <option>opción 4</option>
+                                                </select>
+                                                <div class="select_arrow-search-categories-purchases">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <h3 class="uk-margin-remove uk-text-bold ">$55,000</h3>
-                                <div class="uk-flex uk-flex-middle ">
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 ">Impuesto</h6>
-                                    <h6 class="uk-margin-remove uk-text-bold font-size-12 padding-horizontal-5 ">$0</h6>
+                                <div style="margin-top: 10px;">
+                                    <input type="text" placeholder="Observaciones" class="input-observations-search-categories-purchases">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="select-seller-purchases " style="margin-left: 36px; margin-bottom: 20px; ">
-                            <select>
-                                <option>Sin vendedor</option>
-                                <option>opción 1</option>
-                                <option>opción 2</option>
-                                <option>opción 3</option>
-                                <option>opción 4</option>
-                            </select>
-                            <div class="select_arrow-seller-purchases ">
-                            </div>
-                        </div>
-                        <div style="margin-top: 15px; margin-left: 25px; ">
-                            <div class="uk-flex uk-flex-middle " style="margin-bottom: 5px; ">
-                                <button class="buttons-total-purchases uk-text-bold " style="font-size: 10px !important; width: 80px !important; margin-right: 5px; ">Manual</button>
-                                <button class="buttons-total-purchases uk-text-bold " style="font-size: 10px !important; width: 120px !important; margin-right: 5px; ">Rápida con factura</button>
-                                <button class="buttons-total-purchases " style="font-size: 10px !important; width: 80px !important;color: rgb(4, 179, 4) !important; font-weight: 800; ">Rápida</button>
+                                <div>
+                                    <div class="uk-flex uk-flex-middle" style="margin-left: 20px; margin-top: 15px;">
+                                        <button class="buttons-total-search-categories-purchases uk-text-bold" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;">Confirmar transacción</button>
+                                        <button class="buttons-total-search-categories-purchases uk-text-bold" style="margin-left: 5px; border-bottom-right-radius: 15px; border-top-right-radius: 15px;">Cancelar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
